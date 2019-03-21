@@ -1,0 +1,9 @@
+<form (ngSubmit)="formSubmitted()">
+  <div class="form-group">
+    <label for="subredditInput">Choose your subreddit:</label>
+    <input type="email" class="form-control" id="subredditInput" name="subreddit" placeholder="Enter subreddit" [(ngModel)]="subreddit" required>
+    <small id="subredditHelp" class="form-text text-muted mb-2">You selected {{subreddit ? subreddit : 'nothing'}}!</small>
+
+    <button type="submit" class="btn btn-primary">Change</button>
+  </div>
+</form>

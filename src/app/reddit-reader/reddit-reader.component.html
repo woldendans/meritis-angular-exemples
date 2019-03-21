@@ -1,6 +1,7 @@
 <div class="row">
   <div class="col">
     <h1>Reddit Reader</h1>
-    <app-posts-displayer [subreddit]="'funny'"></app-posts-displayer>
+    <app-subreddit-picker (subredditPicked)="changeSubreddit($event)"></app-subreddit-picker>
+    <app-posts-displayer [subreddit]="subreddit"></app-posts-displayer>
   </div>
 </div>

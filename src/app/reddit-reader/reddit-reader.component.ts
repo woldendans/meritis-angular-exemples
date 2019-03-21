@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './reddit-reader.component.html',
   styleUrls: ['./reddit-reader.component.scss']
 })
-export class RedditReaderComponent implements OnInit {
+export class RedditReaderComponent {
 
-  constructor() { }
+  public subreddit : string = "funny"
 
-  ngOnInit() {
+  changeSubreddit(subreddit) {
+    this.subreddit = subreddit;
   }
 
 }
