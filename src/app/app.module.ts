@@ -11,6 +11,7 @@ import { PostsDisplayerComponent } from './reddit-reader/posts-displayer/posts-d
 import { SubredditPickerComponent } from './reddit-reader/subreddit-picker/subreddit-picker.component';
 
 import { RedditService } from './services/reddit.service';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RedditService } from './services/reddit.service';
     HeaderComponent,
     RedditReaderComponent,
     PostsDisplayerComponent,
-    SubredditPickerComponent
+    SubredditPickerComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

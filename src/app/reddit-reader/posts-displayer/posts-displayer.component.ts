@@ -31,7 +31,6 @@ export class PostsDisplayerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loadPosts(this.subreddit)
   }
 
 }
